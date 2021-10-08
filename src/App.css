@@ -169,3 +169,7 @@ body {
   color: grey;
   margin-right: 10px;
 }
+
+.recently-played-container {
+  display: flex;
+}

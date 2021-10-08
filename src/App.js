@@ -5,7 +5,7 @@ import TopNav from "./components/TopNav";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import React from "react";
-import MusicRow from "./components/MusicRow";
+import Megadeth from "./components/Megadeth";
 
 
 function App() {
@@ -13,7 +13,7 @@ function App() {
     <Router>
       <NavigationBar />
       <TopNav />
-      <MusicRow searchString="queen"/>
+      <Megadeth />
     </Router>
   );
 }
