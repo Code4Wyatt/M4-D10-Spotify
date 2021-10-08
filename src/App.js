@@ -6,15 +6,21 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import React from "react";
 import Megadeth from "./components/Megadeth";
-
+import HipHop from "./components/HipHop";
+import Jazz from "./components/Jazz";
 
 function App() {
   return (
-    <Router>
+    <>
+      <Router>
       <NavigationBar />
       <TopNav />
       <Megadeth />
+      <HipHop />
+      <Jazz />
     </Router>
+     
+       </>
   );
 }
 

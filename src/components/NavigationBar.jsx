@@ -13,7 +13,7 @@ class NavigationBar extends React.Component {
         <img className="logo" src="assets/Logo.png" />
         <br />
         <div className="d-flex">
-          <img className="logoHome" src="/Assets/output-onlinepngtools.png" />
+          <img className="logoHome" src="./assets/output-onlinepngtools.png" />
           <a className="nav-link active" href="#">
             <p className="homeTxt">Home</p>
           </a>
@@ -139,7 +139,7 @@ class NavigationBar extends React.Component {
         <div className="d-flex">
           <img
             className="logoInstall"
-            src="Assets/output-onlinepngtools (4).png"
+            src="assets/output-onlinepngtools (4).png"
           />{" "}
           <a className="nav-link install" href="#">
             Install App

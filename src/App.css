@@ -63,6 +63,7 @@ p {
   position: fixed;
   top: 1vh;
   right: 1vh;
+  z-index: 1;
 }
 
 .userImg {
@@ -74,14 +75,6 @@ p {
   position: relative;
   max-width: 130px;
   left: 20px;
-}
-
-.searchTxt {
-  position: relative;
-  left: 25px;
-  top: 5px;
-  font-weight: bold;
-  color: white !important;
 }
 
 .nav-link {
@@ -172,4 +165,117 @@ body {
 
 .recently-played-container {
   display: flex;
+}
+
+h3 {
+  color: white;
+  position: relative;
+  left: 250px;
+}
+
+.spotify-card {
+  max-width: 200px;
+  height: 200px !important;
+  margin: 4px;
+  position: relative;
+  left: 240px;
+}
+
+.spotify-card-image {
+  max-height: 150px;
+}
+
+.album-title {
+  width: 160px !important;
+
+}
+
+.logoHome {
+  height: 20px;
+  position: relative;
+  top: 15px;
+  left: 20px;
+}
+
+.homeTxt {
+  position: relative;
+  left: 20px;
+  top: 5px;
+  font-weight: bold;
+  color: white !important;
+}
+
+.logoSearch {
+height: 20px;
+  position: relative;
+  top: 15px;
+  left: 20px;
+}
+
+.logoLibrary {
+  height: 20px;
+  position: relative;
+  top: 15px;
+  left: 20px;
+}
+
+.logoInstall {
+  height: 20px;
+  position: relative;
+  top: 520px;
+}
+
+.install {
+  position: relative;
+  top: 510px;
+}
+
+.logoPlaylist {
+  height: 20px;
+  position: relative;
+  left: 20px;
+}
+
+.logoSpotifyHeart {
+  height: 20px;
+  position: relative;
+  left: 20px;
+}
+
+.createPlaylistTxt {
+  font-weight: bold;
+  position: relative;
+  top: -10px;
+  left: 25px;
+  
+}
+
+.likedSongsTxt {
+  font-weight: bold;
+  position: relative;
+  top: -10px;
+  left: 25px;
+}
+
+
+.libraryTxt {
+  position: relative;
+  left: 25px;
+  top: 5px;
+  font-weight: bold;
+  color: white !important;
+}
+
+
+
+.searchTxt {
+  position: relative;
+  left: 25px;
+  top: 5px;
+  font-weight: bold;
+  color: white !important;
+}
+
+h6 {
+  color: white ;
 }

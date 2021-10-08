@@ -1,8 +1,8 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 
-function Megadeth() {
-  const [recentlyPlayed, setRecentlyPlayed] = useState("soul"); // setting recentlyPlayed useState to megadeth
+function HipHop() {
+  const [recentlyPlayed, setRecentlyPlayed] = useState("hip%20hop"); // setting recentlyPlayed useState to megadeth
   const [recentlyPlayedData, setRecentlyPlayedData] = useState([]); // storing the API reponse in state in an empty array
 
   async function fetchRecentlyPlayed() {
@@ -28,7 +28,7 @@ function Megadeth() {
   return (
     <div class="col-12 mt-5">
       <div class="d-flex justify-content-between align-items-center mt-3">
-        <h3>Recently played</h3>
+        <h3>Hip Hop</h3>
         <h6>SEE ALL</h6>
       </div>
       <div class="w-100 recently-played-container">
@@ -60,4 +60,4 @@ function Megadeth() {
   );
 }
 
-export default Megadeth;
+export default HipHop;
