@@ -2,7 +2,8 @@ import React from 'react';
 
 class MusicRow extends React.Component {
     
-    URL = "https://striveschool-api.herokuapp.com/api/deezer/search?q=";
+  URL = "https://striveschool-api.herokuapp.com/api/deezer/search?q=";
+  
 
     // state = {
     //     gallery1: [],
@@ -41,7 +42,7 @@ class MusicRow extends React.Component {
 
     fetchSongs = () => {
         Promise.all([
-            fetch(this.URL + "queen")
+            fetch(this.URL + query)
                 .then((response) => response.json())
                 .then((responseObject) => {
                     if (responseObject.Response === "True") {
