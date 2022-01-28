@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 
 function Megadeth() {
-  const [recentlyPlayed, setRecentlyPlayed] = useState("soul"); // setting recentlyPlayed useState to megadeth
+  const [recentlyPlayed, setRecentlyPlayed] = useState("drum n bass"); // setting recentlyPlayed useState to megadeth
   const [recentlyPlayedData, setRecentlyPlayedData] = useState([]); // storing the API reponse in state in an empty array
 
   async function fetchRecentlyPlayed() {
