@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 function Megadeth() {
   const [recentlyPlayed, setRecentlyPlayed] = useState("drum n bass"); // setting recentlyPlayed useState to megadeth
   const [recentlyPlayedData, setRecentlyPlayedData] = useState([]); // storing the API reponse in state in an empty array
+  const [spotifyData, setSpotifyData] = useState([]);
 
   async function fetchRecentlyPlayed() {
     try {
@@ -21,8 +22,24 @@ function Megadeth() {
     }
   }
 
+  async function fetchSpotifyApi() {
+    try {
+      let response = await fetch(`https://api.spotify.com/v1/artists`, {
+        Authorization: process.env.CLIENT_ID
+      });
+      if (response.ok) {
+        let results = await response.json();
+        setSpotifyData(results.data);
+        console.log("Spotify Data: ", spotifyData);
+      }
+    } catch (error) {
+      console.log(error);
+    }
+  }
+
   useEffect(() => {
     fetchRecentlyPlayed(); 
+    fetchSpotifyApi();
   }, []);
 
   return (
